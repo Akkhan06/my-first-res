@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Card</title>
+
+    <style>
+    body{
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 20px;
+    }
+
+    .item img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .item{
+        border-radius: 10px;
+        box-shadow: 10px 5px 45px gray ;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 576px){
+        .container{
+            margin: 0 30px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            <img src="image/apple.jpg" alt="">
+            <h4>This is a title 1</h4>
+            <p>price :10</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item2">
+            <img src="image/220-NL966181.jpg" alt="">
+            <h4>This is a title 2</h4>
+            <p>price :20</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item3">
+            <img src="image/joss bar.jpg" alt="">
+            <h4>This is a title 3</h4>
+            <p>price :30</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item4">
+            <img src="image/misti.jpg" alt="">
+            <h4>This is a title 4</h4>
+            <p>price :40</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item5">
+            <img src="image/mod.jpg" alt="">
+            <h4>This is a title 5</h4>
+            <p>price :50</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item6">
+            <img src="image/muri.jpg" alt="">
+            <h4>This is a title 6</h4>
+            <p>price :60</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item7">
+            <img src="image/ruti.jpg" alt="">
+            <h4>This is a title 7</h4>
+            <p>price :70</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+
+        <div class="item" id="item1">
+            <img src="image/apple.jpg" alt="">
+            <h4>This is a title 1</h4>
+            <p>price :10</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+        <div class="item" id="item2">
+            <img src="image/220-NL966181.jpg" alt="">
+            <h4>This is a title 2</h4>
+            <p>price :20</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, exercitationem.</p>
+        </div>
+    </div>
+</body>
+</html>
